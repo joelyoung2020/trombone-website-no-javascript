@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: grey;
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+main{
+    background-color: rgb(184, 172, 172);
+}
+h1{
+    font-size: 40px;
+    padding: 10px 20px
+}
+h2{ font-size: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+iframe{
+    width: 100%;
+}
+.p{
+    font-size: 20px;
+    padding-left: 170px;
+}
+#main-nav{
+    font-size: 20px;
+    list-style: none;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+.info{
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+input{
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+}
+#submit, #select{
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+}
+img{
+    height: 120px;
+    width: 300px;
+}
+i{
+    color: blue;
+    font-size: 80px;
+    margin: 30px;
+}
+iframe{
+    justify-self: center;
+    padding: 50px;
+    width: auto;
+    text-align: center;
+}
+footer{
+    background-color: grey;
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    padding-top:  20px ;
+    padding-right:  20px ;
+    display: inline-block;
+
+}
+
+.footer-nav{
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+}
+#main-nav a{
+    text-decoration: none;
+    color: black;
+    transition: 2ms;
+}
+#main-nav a:hover{
+    letter-spacing: 2px;
+    color: blue;
+    transition: 2ms;
+}
+.div{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 100px;
+}
+h3{ 
+    background-color: grey;
+    font-size: 20px;
+    height: 50px;
+    padding: 15px 20px
+}
+#pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+@media (max-width: 700px){
+    nav{
+        background-color: grey;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+        height:120px;
+    }
+    #main-nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 5px;
+    }
+    #pricing{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
